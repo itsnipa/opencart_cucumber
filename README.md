@@ -37,14 +37,15 @@ Please note that browser drivers are not included as part of this framework. The
 ### Test Report pictures
 
 
-## Reporters
+## Report Generate
 
 Once you have run your tests, you can generate various types of reports. This ``selenium-cucumber-java`` framework utilizes different test reporters to communicate pass/failure information.
 
 
-## Reporting
+## Reports of this project
 
-Cucumber Report
+**Cucumber Report :** 
+This report you can find inside ``reports`` folder
 
 ![image](https://github.com/user-attachments/assets/2d38bcb4-534a-44b0-8040-a47af87ccdf2)
 
@@ -52,6 +53,29 @@ Cucumber Report
 ![image](https://github.com/user-attachments/assets/8a18c0be-3414-4e8e-b1c5-154d825d443c)
 
 
-Test Output Report
+**HTML Report :**
+This test output report you can find inside ``test-output`` folder
 
 ![image](https://github.com/user-attachments/assets/6f0cca41-6b74-42ae-8737-f6dca12fe55e)
+
+
+## BDD Automation with Cucumber-Java and Page Objects
+
+In this repository, we encourage the use of Behavior-Driven Development (BDD) with Cucumber and Java to develop automation scripts.Tests are written in the Cucumber framework using the Gherkin syntax. If you're new to Gherkin and Cucumber, you can find more information at https://cucumber.io/docs/gherkin/reference/ . Test Case written for
+**Registration feature:** 
+
+```
+Feature: Account Registration
+
+  @regression
+  Scenario: Successful Account Registration
+    Given the user navigates to Register Account page
+    When the user enters the details into below fields
+      | firstName | John       |
+      | lastName  | Kenedy     |
+      | telephone | 1234567890 |
+      | password  | test@123   |
+    And the user selects Privacy Policy
+    And the user clicks on Continue button
+    Then the user account should get created successfully
+```
