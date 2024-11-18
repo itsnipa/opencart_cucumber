@@ -1,4 +1,9 @@
-# opencart_cucumber
+# Web Automation Using Cucumber & TestNG
+
+This is a web automation project on ``Opencart`` using cucumber in java.
+
+## About the project
+
 
 ### Test Report pictures
 
